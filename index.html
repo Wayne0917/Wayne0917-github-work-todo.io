@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Wayne's 待辦清單</title>
+</head>
+<body>
+    <h2>TODO LIST</h2>
+    
+        <div class="title_inoutBox">
+            <input type="text" placeholder="請輸入待辦事件..." class="todoText" autofocus>
+            <button class="createBtn"><img src="/圖片素材/compose.png" alt="搜尋圖片"></button>
+        </div>
+    
+
+    <div class="todoListBox">
+    <ul>
+
+        <li class="todoListBoxAll">
+            全部
+            <ul class="listAll list"></ul>
+        </li>
+        
+        <li class="todoListBoxTreat">
+            待完成
+            <ul class="listTreat"></ul>
+        </li>
+        
+        <li class="todoListBoxFinish">
+            已完成
+            <ul class="listFinish"></ul>
+        </li>
+    </ul>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

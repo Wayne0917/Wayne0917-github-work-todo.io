@@ -1,0 +1,250 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(174deg, #FFD370 2%, #FFD370 46%, #FFFFFF 46%, #FFFFFF 100%, #E8E8E8 100%);
+  background-repeat: no-repeat;
+}
+
+h2 {
+  text-align: center;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  margin: 5.5% auto;
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 768) {
+  h2 h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.title_inoutBox {
+  max-width: 100%;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.title_inoutBox input {
+  width: 40%;
+  font-size: 1.3rem;
+  padding: 7px;
+  text-align: center;
+  border-right: 0;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px 0 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .title_inoutBox input {
+    font-size: 1rem;
+  }
+}
+
+button {
+  background-color: #FFFFFF;
+  border-left: 0;
+  border-radius: 0 10px 10px 0px;
+  cursor: pointer;
+}
+
+.todoListBox {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.todoListBox ul {
+  width: 60%;
+  padding: 0;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.todoListBox ul li {
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+  padding: 3%;
+  position: relative;
+}
+.todoListBox ul li:hover {
+  border-bottom: 2px solid black;
+}
+.todoListBox ul .listAll {
+  width: 60vw;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 103%;
+  overflow: hidden;
+}
+.todoListBox ul .list_li {
+  width: 95%;
+  padding: 5%;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  align-items: center;
+}
+.todoListBox ul .list_li button {
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  background-image: url("/圖片素材/can.png");
+}
+.todoListBox ul .list_li button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+.todoListBox ul .list_li:hover {
+  border-bottom: 2px solid black;
+}
+.todoListBox ul .listTreat {
+  width: 60vw;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 103%;
+  overflow: hidden;
+  left: -100%;
+}
+.todoListBox ul .listFinish {
+  width: 60vw;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 103%;
+  overflow: hidden;
+  left: -200%;
+}
+@media screen and (max-width: 768px) {
+  .todoListBox ul .list_li {
+    font-size: 1rem;
+  }
+  .todoListBox ul .list_li button {
+    width: 36px;
+    height: 36px;
+    background-image: url("/圖片素材/can-min.png");
+    top: 7%;
+  }
+}
+.todoListBox .listBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.todoListBox .listCheckBox {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 5%;
+  top: 42%;
+}
+@media screen and (max-width: 768px) {
+  .todoListBox .listCheckBox {
+    width: 18px;
+    height: 18px;
+    top: 31%;
+  }
+}
+.todoListBox .underText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.todoListBox .underText button {
+  font-family: NotoSansCJKtc-Regular;
+  font-size: 1.4rem;
+  background-color: rgba(255, 255, 255, 0);
+  color: #9F9A91;
+  letter-spacing: 0.7px;
+  border: 0;
+  cursor: pointer;
+  padding: 5%;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+.todoListBox .underText button:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  color: black;
+}
+.todoListBox .underText p {
+  font-family: NotoSansCJKtc-Regular;
+  font-size: 1.4rem;
+  color: #333333;
+  letter-spacing: 0.7px;
+  padding: 5%;
+}
+@media screen and (max-width: 768px) {
+  .todoListBox .underText p, .todoListBox .underText button {
+    font-size: 1rem;
+  }
+}
+
+.delLine {
+  color: rgba(51, 51, 51, 0.4392156863);
+  text-decoration: line-through;
+}
+
+.underLine {
+  border-bottom: 2px solid black;
+}
