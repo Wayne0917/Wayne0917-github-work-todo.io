@@ -137,7 +137,7 @@ button {
   cursor: pointer;
   position: absolute;
   right: 5%;
-  background-image: url("/圖片素材/can.png");
+  background-image: url("圖片素材/can.png");
 }
 .todoListBox ul .list_li button:hover {
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -171,7 +171,7 @@ button {
   .todoListBox ul .list_li button {
     width: 36px;
     height: 36px;
-    background-image: url("/圖片素材/can-min.png");
+    background-image: url("圖片素材/can-min.png");
     top: 7%;
   }
 }
