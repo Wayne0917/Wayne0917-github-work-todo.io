@@ -162,6 +162,7 @@ todoListBoxAll.addEventListener('click', (e)=>{
     `;  
 }
 );  
+
 //待完成 事件監聽
 todoListBoxTreat.addEventListener('click', (e)=>{
     //先篩選出 符合條件的資料，再去做 迴圈處理
@@ -183,15 +184,8 @@ todoListBoxTreat.addEventListener('click', (e)=>{
                         ${item.todoThing}
                     </span>
 
-                    <input
-                    type="checkbox"
-                    class="listCheckBox"
-                    data-num='${index}'
-                    ${item.completed ? 'checked' : ''}>
-
                 </label>
 
-                <button class="delBtn" data-num='${index}'></button>
             </li>
             `         
         });
@@ -204,16 +198,6 @@ todoListBoxTreat.addEventListener('click', (e)=>{
     </div>
     `;  
 
-    if (e.target.getAttribute('class') === 'listCheckBox') {
-        data[num].completed = e.target.checked;
-        
-        if (e.target.checked) {
-            count--;
-        }else{
-            count++;
-        }
-    }
-
     if (e.target.getAttribute('class') === 'clearFinishedBtn') {
         data = data.filter(item => !item.completed);
         renderData();
@@ -221,6 +205,7 @@ todoListBoxTreat.addEventListener('click', (e)=>{
     }
 }
 );
+
 //已完成 事件監聽
 todoListBoxFinish.addEventListener('click', (e)=>{
     //先篩選出 符合條件的資料，再去做 迴圈處理
@@ -241,8 +226,7 @@ todoListBoxFinish.addEventListener('click', (e)=>{
                         ${item.todoThing}
                     </span>
                 </label>
-
-                <button class="delBtn" data-num='${index}'></button>
+                
             </li>
             `         
         });
