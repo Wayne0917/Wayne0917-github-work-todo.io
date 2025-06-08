@@ -173,7 +173,7 @@ todoListBoxTreat.addEventListener('click', (e)=>{
     listFinish.innerHTML = '';
 
     let str = '';
-    finished.forEach((item, index) =>{
+    finished.forEach((item) =>{
             str += 
             `
             <li class='list_li'>
@@ -216,7 +216,7 @@ todoListBoxFinish.addEventListener('click', (e)=>{
     listTreat.innerHTML = '';
 
     let str = '';
-    finished.forEach((item, index) =>{
+    finished.forEach((item) =>{
             str += 
             `
             <li class='list_li'>
