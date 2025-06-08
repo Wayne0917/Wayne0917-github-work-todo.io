@@ -166,6 +166,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   .todoListBox ul .list_li {
+    width: 100%;
     font-size: 1rem;
   }
   .todoListBox ul .list_li button {
@@ -173,6 +174,17 @@ button {
     height: 36px;
     background-image: url("圖片素材/can-min.png");
     top: 7%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .todoListBox ul {
+    width: 80%;
+  }
+  .todoListBox ul li {
+    font-size: 0.9rem;
+  }
+  .todoListBox ul .listAll, .todoListBox ul .listTreat, .todoListBox ul .listFinish {
+    width: 80vw;
   }
 }
 .todoListBox .listBox {

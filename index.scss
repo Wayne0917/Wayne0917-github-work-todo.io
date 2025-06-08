@@ -76,7 +76,7 @@ h2{
     @include centerLayout();
     flex-direction: column;
     flex-wrap: wrap;
-    
+
     ul{
         width: 60%;
         padding: 0;
@@ -124,6 +124,7 @@ h2{
                 border-radius: 50%;
             }
         }
+        
         .list_li:hover{
             border-bottom: 2px solid black;
         }      
@@ -138,8 +139,9 @@ h2{
             left: -200%;
         }
         
-        @media screen and (max-width : 768px){
+        @media screen and (max-width : 768px){           
             .list_li{
+                width: 100%;
                 font-size: 1rem;
             
                 button{
@@ -151,6 +153,19 @@ h2{
         }
     }
 }
+@media screen and (max-width : 768px){
+    ul{
+        width: 80%;
+        li{
+            font-size: 0.9rem;
+        }
+
+        .listAll, .listTreat, .listFinish{
+            width: 80vw;
+        }
+    }   
+}
+
 
     .listBox{
         @include centerLayout();
